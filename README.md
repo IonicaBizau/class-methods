@@ -15,20 +15,65 @@ $ npm i --save class-methods
 
 const classMethods = require("class-methods");
 
-console.log(classMethods());
+class Person {
+    constructor (name) {
+        this.setName(name);
+    }
+    setName (name) {
+        this.name = name;
+    }
+    getName (name) {
+        return this.name;
+    }
+}
+
+class Worker extends Person {
+    constructor (name, job) {
+        super(name);
+        this.setJob(job);
+    }
+    setJob (job) {
+        this.job = job;
+    }
+    getJob (job) {
+        return this.job;
+    }
+    static randomName () {
+        // Yes, it's random enough :D
+        return ["Alice", "Bob"][0];
+    }
+}
+
+console.log(classMethods(Worker));
+// [ 'setJob', 'getJob', 'setName', 'getName' ]
+
+console.log(classMethods(Person));
+// [ 'setName', 'getName' ]
+
+console.log(classMethods(Worker, {
+    deep: false
+}));
+// [ 'setJob', 'getJob' ]
+
+console.log(classMethods(Worker, {
+    includeStatic: true
+}));
+// [ 'setJob', 'getJob', 'randomName', 'setName', 'getName' ]
 ```
 
 ## Documentation
 
-### `classMethods(a, b)`
+### `classMethods(input, options)`
 Get the methods of a JavaScript class.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **Class** `input`: The class you want to get the methods of.
+- **Object** `options`: An object containing the following fields:
+ - `deep` (Boolean): If `false` the parent classes will not be iterated.
+ - `includeStatic` (Boolean): If `true`, the static methods will be included too.
 
 #### Return
-- **Number** Return description.
+- **Array** The class methods.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
