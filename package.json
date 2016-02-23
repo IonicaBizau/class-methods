@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/IonicaBizau/class-methods#readme",
   "dependencies": {
+    "exclude-arr": "^1.0.0",
+    "static-methods": "^1.0.0",
     "ul": "^5.2.1"
   }
 }
