@@ -25,6 +25,24 @@ class Worker extends Person {
     getJob (job) {
         return this.job;
     }
+    static randomName () {
+        // Yes, it's random enough :D
+        return ["Alice", "Bob"][0];
+    }
 }
 
 console.log(classMethods(Worker));
+// [ 'setJob', 'getJob', 'setName', 'getName' ]
+
+console.log(classMethods(Person));
+// [ 'setName', 'getName' ]
+
+console.log(classMethods(Worker, {
+    deep: false
+}));
+// [ 'setJob', 'getJob' ]
+
+console.log(classMethods(Worker, {
+    includeStatic: true
+}));
+// [ 'setJob', 'getJob', 'randomName', 'setName', 'getName' ]

@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/class-methods/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/class-methods#readme"
+  "homepage": "https://github.com/IonicaBizau/class-methods#readme",
+  "dependencies": {
+    "ul": "^5.2.1"
+  }
 }
