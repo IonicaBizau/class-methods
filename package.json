@@ -1,0 +1,28 @@
+{
+  "name": "class-methods",
+  "description": "Get the methods of a JavaScript class.",
+  "keywords": [
+    "class",
+    "methods",
+    "get",
+    "the",
+    "of",
+    "a",
+    "javascript"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/class-methods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/class-methods/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/class-methods#readme"
+}
