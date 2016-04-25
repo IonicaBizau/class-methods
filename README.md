@@ -1,18 +1,20 @@
+
 # class-methods [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/class-methods.svg)](https://www.npmjs.com/package/class-methods) [![Downloads](https://img.shields.io/npm/dt/class-methods.svg)](https://www.npmjs.com/package/class-methods) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Get the methods of a JavaScript class.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save class-methods
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
-"use strict";
-
 const classMethods = require("class-methods");
 
 class Person {
@@ -61,7 +63,8 @@ console.log(classMethods(Worker, {
 // [ 'setJob', 'getJob', 'randomName', 'setName', 'getName' ]
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `classMethods(input, options)`
 Get the methods of a JavaScript class.
@@ -75,13 +78,13 @@ Get the methods of a JavaScript class.
 #### Return
 - **Array** The class methods.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
 
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
