@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save class-methods
+# Using npm
+npm install --save class-methods
+
+# Using yarn
+yarn add class-methods
 ```
 
 
