@@ -130,6 +130,7 @@ If you are using this library in one of your projects, add it in this list. :spa
 
  - [`daty`](https://github.com/IonicaBizau/daty#readme)—A tiny library to manage date objects.
  - [`debuk`](https://github.com/udnisap/debuk#readme) (by Pasindu Perera)—Debug and performance test your code with a minimum setup
+ - [`text-runner`](https://github.com/Originate/text-runner)—Test runner for text
  - [`wss-manager`](https://github.com/firstopinion/wss-manager) (by Jarid Margolin)—A controllable Websocket Server interface used for testing
 
 ## :scroll: License
