@@ -11,7 +11,7 @@
     "javascript"
   ],
   "license": "MIT",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,6 +41,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
