@@ -25,10 +25,6 @@
     "url": "https://github.com/IonicaBizau/class-methods/issues"
   },
   "homepage": "https://github.com/IonicaBizau/class-methods#readme",
-  "dependencies": {
-    "exclude-arr": "^1.0.0",
-    "ul": "^5.2.1"
-  },
   "files": [
     "bin/",
     "app/",
